@@ -12,6 +12,7 @@ public class CatalogController : ControllerBase {
         _db = db;
     }
 
+
     [HttpGet]
     public IActionResult GetItems() {
         return Ok(_db.Items);

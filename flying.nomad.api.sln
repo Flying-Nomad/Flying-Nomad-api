@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying.nomad.Domain", "flyi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying.nomad.Data", "flying.nomad.Data\flying.nomad.Data.csproj", "{F5135364-F8AC-49F7-9B98-3C255E861223}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{406DF30D-432C-4296-9990-D028B525EC4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flying.nomad.Domain.Tests", "tests\flying.nomad.Domain.Tests\flying.nomad.Domain.Tests.csproj", "{7DFDDC6F-5361-4B60-86DC-85569A968BAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{F5135364-F8AC-49F7-9B98-3C255E861223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5135364-F8AC-49F7-9B98-3C255E861223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5135364-F8AC-49F7-9B98-3C255E861223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFDDC6F-5361-4B60-86DC-85569A968BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFDDC6F-5361-4B60-86DC-85569A968BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFDDC6F-5361-4B60-86DC-85569A968BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFDDC6F-5361-4B60-86DC-85569A968BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DFDDC6F-5361-4B60-86DC-85569A968BAB} = {406DF30D-432C-4296-9990-D028B525EC4B}
 	EndGlobalSection
 EndGlobal

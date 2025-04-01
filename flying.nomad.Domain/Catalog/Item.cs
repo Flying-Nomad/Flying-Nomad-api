@@ -10,7 +10,7 @@ namespace flying.nomad.Domain.Catalog {
         public List<Rating>? Ratings { get; set; }
 
         public void AddRating(Rating rating){
-        this.Ratings.Add(rating);
+        this.Ratings?.Add(rating);
         }
 
 
