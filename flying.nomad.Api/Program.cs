@@ -13,7 +13,13 @@ builder.Services.AddDbContext<StoreContext>(options =>
         b => b.MigrationsAssembly("flying.nomad.Api"));
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
-
+builder.Services.AddCors(options => {
+options.AddDefaultPolicy(builder =>{
+builder.WithOrigins("http://localhost:3000")
+.AllowAnyHeader()
+.AllowAnyMethod();
+});
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,5 +28,6 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseCors();
 app.MapControllers();
 app.Run();
