@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using flying.nomad.Domain.Catalog;
 using flying.nomad.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace flying.nomad.Api.Controllers {
     [ApiController]
@@ -140,6 +141,7 @@ public class CatalogController : ControllerBase {
 */
 
 [HttpDelete("{id:int}")]
+[Authorize("delete:catalog")]
     public IActionResult Delete(int id) {
         var item = _db.Items.Find(id);
         if (item == null) {
